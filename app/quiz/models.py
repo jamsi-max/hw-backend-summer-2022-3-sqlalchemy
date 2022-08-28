@@ -15,7 +15,7 @@ from app.store.database.sqlalchemy_base import db
 
 @dataclass
 class Theme:
-    id: int | None
+    id: int or None
     title: str
 
 
@@ -54,7 +54,7 @@ class AnswerModel(db):
 
 @dataclass
 class Question:
-    id: int | None
+    id: int or None
     title: str
     theme_id: int
     answers: list["Answer"]
